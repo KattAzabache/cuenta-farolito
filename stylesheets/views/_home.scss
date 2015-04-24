@@ -1,0 +1,403 @@
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+	height: 100%;	  
+  font-family: Lato;
+}
+/*nav*/
+.menu_bar {
+  display:none;
+}
+ 
+.barra-de-navegacion {
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+}
+ 
+.barra-de-navegacion nav {
+  background-color:white;
+  z-index:1000;
+  width:100%;
+    ul {
+      list-style:none;  
+      text-align: right;
+      padding-right: 4%;
+          li {
+       display:inline-block;
+       position: relative;
+     }
+   } 
+}
+
+
+.barra-de-navegacion nav ul li a {
+  display:block;
+  text-decoration:none;
+  padding: 10px 15px;    
+  color: black;
+}
+ 
+.barra-de-navegacion nav ul li a span {
+  margin-right:10px;
+}
+ 
+.barra-de-navegacion nav ul li:hover .children {
+  display:block;
+}
+ 
+.barra-de-navegacion nav ul li .children {
+  display: none;
+  background-color:  #57c4f1;;
+  position: absolute;
+  width: 150%;
+  z-index:1000;
+  text-align: center;
+  padding: 0;
+}
+ 
+.barra-de-navegacion nav ul li .children li {
+  display:block;
+  overflow: hidden;
+  border-bottom: 1px dashed rgba(255,255,255,.5);
+
+}
+ 
+.barra-de-navegacion nav ul li .children li a {
+  display: block;
+}
+ 
+.barra-de-navegacion nav ul li .children li a span {
+  float: right;
+  position: relative;
+  top:3px;
+  margin-right:0;
+  margin-left:10px;
+}
+ 
+.barra-de-navegacion nav ul li .caret {
+  position: relative;
+  top:3px;
+  margin-left:10px;
+  margin-right:0px;
+}
+ 
+ .submenu{
+   display: none;
+      button {
+      width: 60px;
+      height: 40px;
+      border-radius: 25px;
+      border: 1px solid black;
+      background-color: transparent;
+      color: black;
+    }
+}
+.ingresar{
+  display: none;
+   a button {  
+  width: 95px;
+  height: 35px;
+  border-radius: 12px;
+  border: 0;
+  background-color: grey;
+  color: white;
+  font-weight: 700;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    padding-top:40px;
+  }
+ 
+  .menu_bar {
+    display:block;
+    width:100%;
+    position: fixed;
+    top:0;
+    background-color: #F7F7F7;
+  }
+ 
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 10px;
+    color: black;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+ 
+  .menu_bar span {
+    float: right;
+    font-size: 40px;
+  }
+ 
+  .barra-de-navegacion nav {
+    width: 100%;
+    height: calc(150% - 100px);
+    position: fixed;
+    right:100%;
+    margin: 0;  
+    top: 55px;  
+    background-color: rgb(87, 196, 241)
+  }
+ 
+  .barra-de-navegacion nav ul li {
+    display: block;
+    border-bottom:3px dashed rgba(255,255,255,.5);
+    padding: 10%;
+    text-align: center;
+    font-size: 30px;
+  }
+ 
+  .barra-de-navegacion nav ul li a {
+    display: block;
+    color: white;
+  }
+ 
+  .barra-de-navegacion nav ul li:hover .children {
+    display: none;
+  }
+ 
+  .barra-de-navegacion nav ul li .children {
+    width: 100%;
+    position: relative;
+  }
+ 
+  .barra-de-navegacion nav ul li .children li a {
+    margin-left:20px;
+  }
+ 
+  .barra-de-navegacion nav ul li .caret {
+    float: right;
+  }
+}
+
+/*celular*/
+
+.boton2{
+  width: 30%;
+  background-color: rgba(249, 6, 13, 0.84);
+  padding: 8px;
+  border-radius: 14px;
+  color: white;
+  left: 64%;
+  position: absolute;
+  top: 14px;
+    h3{
+    	  margin: 0;
+        font-size: 13px;
+         font-family: Lato;
+    }
+
+}
+
+    
+/*contactos*/
+.contacto {
+text-align: center;
+background-color: #F7F7F7;
+}
+
+.contactanos {
+padding: 8% 5%;
+  h2 {
+   margin: 5%;
+   font-size: 50px;
+   color: grey;
+   }
+  h3{
+   margin: 5%;
+   font-size: 20px;
+   color: grey;
+   padding-top:5%;
+   padding-bottom: 8%;
+   }
+
+}
+.estilo-nombre {
+  height: 8%;
+  width: 40%;
+  border: 0;
+  font-size: 20px;
+  margin: 1%;
+}
+.correo{
+  height: 8%;
+  width: 40%;
+  border: 0;
+  font-size: 20px;
+  margin: 1%;
+}
+.mensaje{
+  height: 15%;
+  width: 40%;
+  border: 0;
+  font-size: 20px;
+  margin: 1%;
+}
+.contra{
+    height: 8%;
+    width: 40%;
+    border: 0;
+    font-size: 20px;
+    margin: 1%;
+  }
+.buton.bt-enviar {
+  width: 13%;
+  background-color: grey;
+  height: 36px;
+  padding: 9px;
+  border-radius: 12px;
+  margin-top: 3%;
+  color: white;
+  left: 58%;
+  position: relative;
+    .butoncolor {
+        background-color: transparent;
+        border: 0;
+        position: relative;
+        }
+}
+.estilo-nombre2 {
+  height: 7%;
+  width: 75%;
+  border: 0;
+  font-size: 17px;
+  margin:2%;
+  text-align: center;
+}
+.correo2{
+  height: 7%;
+  width: 75%;
+  border: 0;
+  font-size: 17px;
+  margin: 2%;
+  text-align: center;
+}
+.mensaje2{
+  height: 15%;
+  width: 75%;
+  border: 0;
+  font-size: 17px;
+  margin: 2%;
+  text-align: center;
+}
+.contra2{
+    height: 8%;
+    width: 75%;
+    border: 0;
+    font-size: 20px;
+    margin: 2%; 
+    text-align: center;
+  }
+
+.buton.bt-enviar2 {
+  width: 29%;
+  background-color: grey;
+  height: 36px;
+  padding: 9px;
+  border-radius: 12px;
+  top: 3px;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+    .butoncolor2 {
+        background-color: transparent;
+        border: 0;
+        position: relative;
+        }
+}
+.footer{
+  color: #777777;
+  background-color: #989898;
+  height: 49px;
+   .redes{
+    padding-left: 21px;
+    float: left;
+     ul{
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 0;
+      margin-top: 0;
+       li{
+        padding-left: 7px;
+        position: relative;
+        top: -14px;
+        display: inline-block;
+         img{
+          padding: 2px;
+          border-radius: 50%;
+          background-color: #fff;
+          border: 1px solid #ddd;
+         }
+       }
+     }
+   }
+   .redes2{
+     ul{
+      list-style: none;
+      text-align: center;
+      padding: 0;
+       li{
+        padding-left: 7px;
+        position: relative;
+        top: -14px;
+        display: inline-block;
+         img{
+          padding: 2px;
+          border-radius: 50%;
+          background-color: #fff;
+          border: 1px solid #ddd;
+         }
+       }
+     }
+   }
+   .reservar{
+    float: right;
+    width: 21%;
+    padding: 12px;
+     h5{
+      color: white;
+      font-size: 17px;
+      margin: 1%;
+     }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
