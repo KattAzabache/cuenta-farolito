@@ -5677,7 +5677,8 @@ button.close {
   color: white;
   left: 64%;
   position: absolute;
-  top: 14px; }
+  top: 14px;
+  text-align: center; }
   .boton2 h3 {
     margin: 0;
     font-size: 13px;
